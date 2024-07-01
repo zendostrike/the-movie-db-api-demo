@@ -1,0 +1,12 @@
+.empty {
+  text-align: center;
+}
+
+.empty__image {
+  width: 100px;
+  height: 100px;
+}
+
+.empty__copy {
+  margin: 0px;
+}

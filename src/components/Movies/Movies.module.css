@@ -1,0 +1,14 @@
+.movies {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  gap: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .movies {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 6px;
+  }
+}

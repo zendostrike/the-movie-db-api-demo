@@ -1,0 +1,32 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+}
+
+.search__label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffba33;
+  margin-bottom: 4px;
+}
+
+.search__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #ffba33;
+  padding: 10px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+.search__error_message {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #ff4b4b;
+}

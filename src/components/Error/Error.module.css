@@ -1,0 +1,12 @@
+.error {
+  text-align: center;
+}
+
+.error__image {
+  width: 100px;
+  height: 100px;
+}
+
+.error__copy {
+  margin: 0px;
+}
