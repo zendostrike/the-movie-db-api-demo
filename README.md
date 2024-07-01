@@ -11,6 +11,7 @@ Se tomó en cuenta:
 - Mejora de DX con exports nombrados y archivos Barrel
 - Manejo de estados de carga y error
 - Responsivo para desktop y mobile
+- Debouncing para evitar múltiples llamadas al servidor
 
 No se tomó en cuenta:
 - Caché del lado del servidor
