@@ -15,6 +15,8 @@ Se tomó en cuenta:
 No se tomó en cuenta:
 - Caché del lado del servidor
 - Rutas
+- Testing
+- Paginación
 
 ## Instalación
 

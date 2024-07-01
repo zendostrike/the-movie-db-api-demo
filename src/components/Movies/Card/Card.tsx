@@ -30,11 +30,6 @@ export function Card({ title, subTitle, description, img }: Props) {
             : description}
         </p>
       </div>
-      <footer className={styles.card__footer}>
-        <div className={styles.card__actions}>
-          <h5 className={styles.card__subtitle}>{subTitle}</h5>
-        </div>
-      </footer>
     </article>
   );
 }
