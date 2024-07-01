@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# The MovieDB API demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo simple usando MovieDB API.
 
-Currently, two official plugins are available:
+Demo online: https://the-movie-db-api-demo.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se tomó en cuenta:
+- CSS modular con convención BEM
+- Componentes tipados con Typescript
+- Manejo de estado con Redux
+- Mejora de DX con exports nombrados y archivos Barrel
+- Manejo de estados de carga y error
+- Responsivo para desktop y mobile
 
-## Expanding the ESLint configuration
+No se tomó en cuenta:
+- Caché del lado del servidor
+- Rutas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Correr localmente
+
+Copiar archivo de variables de entorno
+
+```
+cp .env.example .env.local
+```
+
+Reemplazar por llave correcta
+
+```
+VITE_THE_MOVIE_DB_API_KEY=MI_LLAVE_CORRECTA
+VITE_BASE_API_URL=https://api.themoviedb.org/3
+```
+
+Y correr la aplicación:
+
+```
+npm run dev
+```

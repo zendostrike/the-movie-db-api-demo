@@ -5,7 +5,7 @@ import { Props } from "./types";
 export function Card({ title, subTitle, description, img }: Props) {
   const imgUrl = img
     ? `https://image.tmdb.org/t/p/original${img}`
-    : "src/assets/img_placeholder.png";
+    : "img_placeholder.png";
 
   return (
     <article className={styles.card}>
