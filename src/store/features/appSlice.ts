@@ -11,7 +11,7 @@ export interface AppState {
   error?: boolean;
 }
 
-const initialState: AppState = {
+export const initialState: AppState = {
   searchText: "",
   movies: [],
 };

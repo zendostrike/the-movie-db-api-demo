@@ -1,19 +1,29 @@
+import type { Props } from "./types";
+
+import {
+  DEFAULT_PLACEHOLDER_IMG,
+  DESC_MAX_CHARS,
+  IMG_FOUND_MESSAGE_PREFIX,
+  IMG_NOT_FOUND_MESSAGE,
+  IMG_REPO_BASE_URL,
+  TEST_ID_CARD,
+} from "./constants";
+
 import styles from "./Card.module.css";
 
-import { Props } from "./types";
-
 export function Card({ title, subTitle, description, img }: Props) {
-  const imgUrl = img
-    ? `https://image.tmdb.org/t/p/original${img}`
-    : "img_placeholder.png";
+  const imgUrl = img ? `${IMG_REPO_BASE_URL}${img}` : DEFAULT_PLACEHOLDER_IMG;
+  const imgAlt = img
+    ? `${IMG_FOUND_MESSAGE_PREFIX} ${title}`
+    : IMG_NOT_FOUND_MESSAGE;
 
   return (
-    <article className={styles.card}>
+    <article className={styles.card} data-testid={TEST_ID_CARD}>
       <aside className={styles.card__aside}>
         <figure className={styles.card__figure}>
           <img
             src={imgUrl}
-            alt={`Poster de ${title}`}
+            alt={imgAlt}
             className={styles.card__image}
             loading="lazy"
           />
@@ -26,7 +36,7 @@ export function Card({ title, subTitle, description, img }: Props) {
       <div className={styles.card__body}>
         <p className={styles.card__copy}>
           {description.length > 100
-            ? `${description.slice(0, 100).trim()}...`
+            ? `${description.slice(0, DESC_MAX_CHARS).trim()}...`
             : description}
         </p>
       </div>

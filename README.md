@@ -5,6 +5,7 @@ Demo simple usando MovieDB API.
 Demo online: https://the-movie-db-api-demo.vercel.app/
 
 Se tomó en cuenta:
+
 - CSS modular con convención BEM
 - Componentes tipados con Typescript
 - Manejo de estado con Redux
@@ -12,11 +13,12 @@ Se tomó en cuenta:
 - Manejo de estados de carga y error
 - Responsivo para desktop y mobile
 - Debouncing para evitar múltiples llamadas al servidor
+- Unit Testing
 
 No se tomó en cuenta:
+
 - Caché del lado del servidor
 - Rutas
-- Testing
 - Paginación
 
 ## Instalación
@@ -44,4 +46,10 @@ Y correr la aplicación:
 
 ```
 npm run dev
+```
+
+## Correr los tests
+
+```
+npm run test
 ```
